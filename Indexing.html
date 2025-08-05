@@ -1,0 +1,48 @@
+<style type="text/css">
+body{
+       background-color:#e0f2f1;
+}
+
+    h2{
+      text-align:center;
+      color:#104d40;
+      
+    }
+    h3{
+        text-align: right;
+        color:#401f;
+        background-color:#d0e3e5;
+    }
+      
+</style>
+    <div dir="rtl">
+
+      <h2><marquee>الفهرس الموحد لجامعة صنعاء</marquee></h2>
+      <h3>يهدف الفهرس إلى توليد المراجع والمصادر إلى مكتبات كليات جامعة صنعاء ، وتكوين
+       فهرس الإلكتروني موحد يخدم الطلبة والباحثين في كافة المراحل الدراسية</h3>
+      <form style=" color:;background-color:#e0f2f1;" >
+      
+        <input  name="title" placeholder="العنوان" onChange={handleChange} required /><br><br>
+        <input name="author" placeholder="المؤلف" onChange={handleChange} required /><br><br>
+        <div class="form-group">
+        <label for="genre">النوع:</label>
+        <select id="genre" name="genre">
+        
+        <option value="رسائل">رسائل </option>
+        <option value="مقالات">مقالات</option>
+        <option value="كتب">كتب</option>
+        </select>
+        </div><br>
+        <input  name="year" placeholder="السنة" onChange={handleChange} type="number" /><br><br>
+        <input  ename="isbn" placeholder="ISBN" onChange={handleChange} /><br><br>
+ رفع صورة الغلاف<input type="file" name="cover" accept="image/*" /><br>
+ رفع ملف pdf  <input type="file" name="pdf" accept="application/pdf" /><br>
+        
+        <button type="submit">save</button><br>
+        <p style="color:#00f">كل الحقوق محفوظة الدى</p>
+             <a href="" >@عبدالله مشورة<br>
+          <a href="" >@هيثم الاحمر<br>
+          <p>@2025</p>
+         
+      </form>
+    </div>
